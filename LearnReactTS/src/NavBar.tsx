@@ -13,10 +13,6 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
 
 interface Props {
   /**
@@ -29,7 +25,7 @@ interface Props {
 const drawerWidth = 240;
 const navItems = ["Home", "About", "Contact"];
 
-function App(props: Props) {
+export default function DrawerAppBar(props: Props) {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
@@ -151,5 +147,3 @@ function App(props: Props) {
     </Box>
   );
 }
-
-export default App;
